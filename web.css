@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
+
+body {
+    margin: 0;
+}
+
+/* Scroll Bar Style */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+} 
+
+/* Button Property */
+
+#myBtn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: black;
+    color: whitesmoke;
+    float: right;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+}
+
+.fa-solid {
+    margin: auto;
+}
+
+/* Nav-Section */
+.nav-item {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (max-width: 1280px) {
+    .nav-item {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 720px) {
+    .nav-item{
+        width: calc(100% - 20px);
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.fa-brands:hover {
+    color: greenyellow;
+}
+
+
+.nav-item:hover, i:hover {
+    color: lightgray;
+}
+
+i {
+    color: whitesmoke;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+.nav-item-right {
+    color: whitesmoke;
+    float: right;
+    margin: 5px 20px;
+}
+
+/* Middle Section or Main Section */
+
+.container2 {
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.mid-header {
+    margin-top: -20px;
+    width: 100%;    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    color: whitesmoke;
+    transition: transform 3s;
+    transform: translate(0px) scale(1);
+}
+
+.mid-header:hover {
+    color: lightgray;
+    transform: translateZ(50px) scale(1.2);
+    width: 100%;
+}
+
+
+/* On Hover Property */
+.container2 :nth-child(1):hover{
+    opacity: 80%;
+    width: 30%;
+}
+
+.container2 :nth-child(2):hover{
+    opacity: 80%;
+    width: 30%;
+}
+
+.container2 :nth-child(3):hover{
+    opacity: 80%;
+    width: 30%;
+}
+
+/* N-th child Property */
+
+.container2 :nth-child(1) {
+    padding: 5px;
+    border-radius: 20px;
+    transition: width 2s, transform 2s;
+    z-index: 1;
+}
+
+.container2 :nth-child(2) {
+    padding: 5px;
+    border-radius: 20px;
+    transition: width 2s, transform 2s;
+    z-index: 1;
+}
+
+.container2 :nth-child(3) {
+    padding: 5px;
+    border-radius: 20px;
+    transition: width 2s, transform 2s;
+    z-index: 1;
+}
+
+/* For Mobile View */
+
+@media (max-width: 500px) {
+    .container2 {
+        display: flexbox;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container2 :nth-child(1) {
+        padding: 5px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .container2 :nth-child(2) {
+        padding: 5px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .container2 :nth-child(3) {
+        padding: 5px;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+
+    /* On Hover Property */
+    .container2 :nth-child(1):hover{
+        opacity: 80%;
+        width: 120%;
+    }
+
+    .container2 :nth-child(2):hover{
+        opacity: 80%;
+        width: 110%;
+    }
+
+    .container2 :nth-child(3):hover{
+        opacity: 80%;
+        width: 110%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .container2 {
+        width: 100%;
+    }
+}
+
+.mid-lowerinfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-content: flex-start;
+    color: whitesmoke;
+    padding: 5px;
+}
+/* 
+.mid-lowerinfo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+} */
+
+
+#FD:hover, #POD:hover, #CCO:hover {
+    color: greenyellow;
+}
+
+/* Form Style */
+
+.container3 {
+    padding: 50px;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
+    margin: 30px 50px 50px 50px;
+}
+
+#submit {
+    margin: 10px auto;
+}
+
+.side-img {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    float: right;
+    border-radius: 20px;
+    margin-top: -150px;
+    margin-left: 80px;
+    margin-right: 10px;
+    opacity: 90%;
+    transition: width 2s;
+}
+
+.side-img:hover {
+    opacity: 100%;
+    width: 80%;
+}
+
+@media (max-width: 1000px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 290px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 260px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 240px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 190px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 75px;
+        margin-bottom: 50px;
+    }
+    .nav-item {
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .side-img {
+        display: none;
+    }
+    .container3 {
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+    .nav-item {
+        display: flex;
+    }
+}
+
+div.copyrights {
+    color: whitesmoke;
+}
+
+span:hover  {
+    color: red;
+}
+
+#FNAME:hover, #COMP:hover, #DISCOUNT:hover {
+    opacity: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/FrondendCourse/web.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+
+    <!--FontAwesome Toolkit-->
+    <script src="https://kit.fontawesome.com/40aec42df1.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap" rel="stylesheet">
+
+    
+    <title>Webpage</title>  
+</head>
+<body>
+  
+  <video autoplay muted loop id="myVideo">
+    <source src="/videos/production_id_4990317 (1080p).mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video> 
+
+  <!--Mobile view-->
+  <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://...">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://...">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://...">Gallery</a>
+      </li>
+    </ul>
+  </div>-->
+  
+  <!--Desktop View-->
+    <nav class="navbar">
+      <div class="container1">
+        <i class="fa-brands fa-xbox"></i>
+        <a href="#" class="nav-item">HOME</a>
+        <a href="#" class="nav-item">PRODUCTS</a>
+        <a href="#" class="nav-item">ACCOUNTS</a>
+      </div>
+      <div class="nav-item-right"><i class="fa-brands fa-uncharted"></i> WELCOME : SHADOW </div>
+    </nav>
+
+    <button id="myBtn" onclick="myFunction()"><i class="fa-solid fa-power-off"></i></button>
+    <!--Video playback script-->
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+      </script>
+    <div class="mid-header"><h1 class="mid-header"><i class="fa-brands fa-shopify"></i> 50% Offers on Gaming Products</h1></div>
+    
+    <div class="container2" id="MID_SECTION">
+        <img src="https://images.unsplash.com/photo-1688789194475-859b4aced595?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nJTIwYWNjZXNzb3JpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="" width="33.33%" height="300px">
+        <img src="https://cdn.mos.cms.futurecdn.net/P7fAM2JYVaUeMATqRKxbjL-1200-80.jpg" alt="" width="33.33%" height="300px">
+        <img src="https://assets-prd.ignimgs.com/2021/12/21/xbox-one-x-button-fin-1640117581464.jpg" alt="" width="33.33%" height="300px">
+
+    </div>
+
+    <div class="mid-lowerinfo">
+      <div class="info1"><i class="fa-solid fa-truck" id="FD"></i>Free Delivery</div>
+      <div class="info2"><i class="fa-brands fa-amazon-pay" id="POD"></i>Pay on Delivery</div>
+      <div class="info3"><i class="fa-regular fa-credit-card" id="CCO"></i>Card Offers Available</div>
+    </div>
+
+
+    <form class="container3">
+      <div class="cnotainer3">
+        <div class="fn">
+          <label class="fname" for="fname">Name</label>
+        </div>
+        <input type="text" class="fname" name="fname" id="FNAME" autocomplete="off" required><br><br>
+        <div class="comp">
+          <label class="email" for="email">Company</label>
+        </div>
+        <input type="text" class="comp" name="comp" id="COMP" autocomplete="off" required><br><br>
+
+        <div class="DiscountSection">
+          <label class="Discount">
+              Discount Coupon Code
+          </label><br>
+
+          <input type="text" class="Discount" id="DISCOUNT"><br>
+
+          <button type="submit" class="btn btn-secondary btn-sm" id="submit" onclick="func()">Submit</button>
+            <script>
+                var form = document.getElementById('f');
+    
+                function func() {
+                    if (form.checkValidity()) {
+                        alert("Have a Great Day..!!");   
+                    }
+                }
+          </script>
+        </div>
+
+        <div class="side-img">
+          <img class="side-img" src="https://cdn.alza.cz/Foto/ImgGalery/Image/playstation-5-zpetna-kompatibilita.jpg" alt="">
+        </div>
+      </div>
+      
+    </form>
+    
+    <footer id="footer" class="container4">
+      <div class="copyrights container-fluid">
+      <p class="text-center">
+            Copyright &copy; Shadow Portal 2023. All Rights Reserved.
+      </p>
+      <p class="text-center">
+           Made With <span>&hearts;</span> in India.
+     </p>
+     </div>
+    </footer>
+    
+</body>
+</html>
